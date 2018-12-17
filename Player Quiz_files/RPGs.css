@@ -1,0 +1,138 @@
+img.thumbnail {
+vertical-align: top;
+max-height:20ex;
+margin:0ex 0.5em 1ex 0.5em;
+float:right;
+}
+
+.Results {
+display:none;
+}
+
+/* Questionaire */
+
+#Qstns {
+clear:both;
+}
+
+table.Questionaire td:first-child {
+	padding-right:.5em;
+	text-align:right;
+	vertical-align: top;
+	}
+
+table.Questionaire td:nth-child(3),
+table.Questionaire td:nth-child(4),
+table.Questionaire td:nth-child(5),
+table.Questionaire td:nth-child(6),
+table.Questionaire td:nth-child(7) {
+	width: 5em;
+	text-align:center;
+	}
+	
+/* Test Results */
+#FormattedText {
+float:left;
+}
+
+/* Bar Graph */
+
+#BarGraph {
+clear:both;
+}
+
+dt { float: left; padding: 4px; }
+
+.bar {
+margin-bottom: 1px;
+color: #fff;
+margin-left: 4em;
+padding: 4px;
+text-align: center;
+/* background: -webkit-gradient(linear, left top, left bottom, from(#ff7617), to(#ba550f)); */
+background-color:#CCCCCC;
+/* -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.25)));
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px; */
+-webkit-animation-name:bar;
+-webkit-animation-duration:0.5s;
+-webkit-animation-iteration-count:1;
+-webkit-animation-timing-function:ease-out;
+}
+
+#data-one {
+background-color:firebrick;
+-webkit-animation-name:bar-one; }
+#data-two {
+background-color:orange;
+-webkit-animation-name:bar-two;
+}
+#data-three {
+background-color:gold;
+-webkit-animation-name:bar-three;
+}
+#data-four {
+background-color:green;
+-webkit-animation-name:bar-four;
+}
+#data-five {
+background-color:royalblue;
+-webkit-animation-name:bar-five;
+}
+#data-six {
+background-color:blueviolet;
+-webkit-animation-name:bar-six;
+}
+#data-seven {
+background-color:violet;
+-webkit-animation-name:bar-seven;
+}
+
+@-webkit-keyframes bar-one {
+0% { width:0%; }
+100% { width:100%; }
+}
+@-webkit-keyframes bar-two {
+0% { width:0%; }
+100% { width:100%; }
+}
+@-webkit-keyframes bar-three {
+0% { width:0%; }
+100% { width:100%; }
+}
+@-webkit-keyframes bar-four {
+0% { width:0%; }
+100% { width:100%; }
+}
+@-webkit-keyframes bar-five {
+0% { width:0%; }
+100% { width:100%; }
+}
+@-webkit-keyframes bar-six {
+0% { width:0%; }
+100% { width:100%; }
+}
+@-webkit-keyframes bar-seven {
+0% { width:0%; }
+100% { width:100%; }
+}
+
+/* Pie Chart */
+#PieChart {
+height:40ex;
+width:50%;
+float:left;
+}
+
+/* Issues */
+
+table.Issues td {
+vertical-align: top;
+}
+
+table.Issues td:first-child {
+	padding-right:.5em;
+	text-align:right;
+	vertical-align: top;
+	}

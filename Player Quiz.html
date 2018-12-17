@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://captainjoy.chunkyboy.com/RPGs/PlayerQuiz.html -->
+<html class=" js flexbox canvas canvastext webgl touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Player Quiz</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="./Player Quiz_files/saved_resource">
+        <link rel="stylesheet" href="./Player Quiz_files/main.css">
+        <link rel="stylesheet" href="./Player Quiz_files/RPGs.css">
+        <script src="./Player Quiz_files/modernizr-2.6.2.min.js"></script>
+		<script type="text/javascript" src="./Player Quiz_files/jsapi"></script>
+        <script src="./Player Quiz_files/questionaire.js" charset=“utf-8”></script>
+        <script src="./Player Quiz_files/saved_resource(1)" type="text/javascript"></script>
+        <link href="./Player Quiz_files/ui+en.css" type="text/css" rel="stylesheet">
+        <script src="./Player Quiz_files/format+en,default+en,ui+en,corechart+en.I.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+		<p><a href="http://www.warehouse23.com/products/robins-laws-of-good-game-mastering" target="_blank">Robin's Laws of Good Game Mastering</a> describes seven types of people who play roleplaying games.  Which kind are you?  <a href="http://www.warehouse23.com/products/robins-laws-of-good-game-mastering" target="_blank"> <img class="thumbnail" src="./Player Quiz_files/SJG30-3009.jpg" alt="Robins Laws Of Good Game Mastering"></a></p>
+
+		<form id="Qstns" onsubmit="onSubmit();">
+			<table border="3" class="Questionaire">
+				<thead><tr>
+					<th colspan="2">问题</th><th>一定</th><th>经常</th><th>有时</th><th>很少</th><th>绝不</th>
+				</tr></thead>
+				<tbody>
+					<tr>
+						<td>1.</td><td>我总是很清楚我的角色需要做些什么来提升到一个新的等级。</td><td><input type="radio" name="q1" value="100"></td><td><input type="radio" name="q1" value="75"></td><td><input type="radio" name="q1" value="50"></td><td><input type="radio" name="q1" value="25"></td><td><input type="radio" name="q1" value="0"></td>
+					</tr>
+					<tr>
+						<td>2.</td><td>我的任务是消灭怪物; GM的任务是提供怪物。</td><td><input type="radio" name="q2" value="100"></td><td><input type="radio" name="q2" value="75"></td><td><input type="radio" name="q2" value="50"></td><td><input type="radio" name="q2" value="25"></td><td><input type="radio" name="q2" value="0"></td>
+					</tr>
+					<tr>
+						<td>3.</td><td>完成目标胜过角色扮演。</td><td><input type="radio" name="q3" value="100"></td><td><input type="radio" name="q3" value="75"></td><td><input type="radio" name="q3" value="50"></td><td><input type="radio" name="q3" value="25"></td><td><input type="radio" name="q3" value="0"></td>
+					</tr>
+					<tr>
+						<td>4.</td><td>我会为了能玩最喜欢的角色类型而牺牲其他。</td><td><input type="radio" name="q4" value="100"></td><td><input type="radio" name="q4" value="75"></td><td><input type="radio" name="q4" value="50"></td><td><input type="radio" name="q4" value="25"></td><td><input type="radio" name="q4" value="0"></td>
+					</tr>
+					<tr>
+						<td>5.</td><td>我的角色需要一个充分的，个人的，游戏内的战斗动机。</td><td><input type="radio" name="q5" value="100"></td><td><input type="radio" name="q5" value="75"></td><td><input type="radio" name="q5" value="50"></td><td><input type="radio" name="q5" value="25"></td><td><input type="radio" name="q5" value="0"></td>
+					</tr>
+					<tr>
+						<td>6.</td><td>“酷”比仔细规划和准备更好。</td><td><input type="radio" name="q6" value="100"></td><td><input type="radio" name="q6" value="75"></td><td><input type="radio" name="q6" value="50"></td><td><input type="radio" name="q6" value="25"></td><td><input type="radio" name="q6" value="0"></td>
+					</tr>
+					<tr>
+						<td>7.</td><td>我扮演任何其他人需要的角色。</td><td><input type="radio" name="q7" value="100"></td><td><input type="radio" name="q7" value="75"></td><td><input type="radio" name="q7" value="50"></td><td><input type="radio" name="q7" value="25"></td><td><input type="radio" name="q7" value="0"></td>
+					</tr>
+					<tr>
+						<td>8.</td><td>我将我的角色表看作是一堆数据，而不是一张角色个性特征列表。</td><td><input type="radio" name="q8" value="100"></td><td><input type="radio" name="q8" value="75"></td><td><input type="radio" name="q8" value="50"></td><td><input type="radio" name="q8" value="25"></td><td><input type="radio" name="q8" value="0"></td>
+					</tr>
+					<tr>
+						<td>9.</td><td>我的所有角色都是战斗向的，但是他们打架的风格我不在意。</td><td><input type="radio" name="q9" value="100"></td><td><input type="radio" name="q9" value="75"></td><td><input type="radio" name="q9" value="50"></td><td><input type="radio" name="q9" value="25"></td><td><input type="radio" name="q9" value="0"></td>
+					</tr>
+					<tr>
+						<td>10.</td><td>如果团很有趣并且节奏很好，我会和陌生人玩游戏。</td><td><input type="radio" name="q10" value="100"></td><td><input type="radio" name="q10" value="75"></td><td><input type="radio" name="q10" value="50"></td><td><input type="radio" name="q10" value="25"></td><td><input type="radio" name="q10" value="0"></td>
+					</tr>
+					<tr>
+						<td>11.</td><td>克服游戏中的挑战比升级更重要。</td><td><input type="radio" name="q11" value="100"></td><td><input type="radio" name="q11" value="75"></td><td><input type="radio" name="q11" value="50"></td><td><input type="radio" name="q11" value="25"></td><td><input type="radio" name="q11" value="0"></td>
+					</tr>
+					<tr>
+						<td>12.</td><td>我的所有角色都以同样的方式处理战斗。</td><td><input type="radio" name="q12" value="100"></td><td><input type="radio" name="q12" value="75"></td><td><input type="radio" name="q12" value="50"></td><td><input type="radio" name="q12" value="25"></td><td><input type="radio" name="q12" value="0"></td>
+					</tr>
+					<tr>
+						<td>13.</td><td>我完全按照我角色的方式来处理游戏中的挑战。</td><td><input type="radio" name="q13" value="100"></td><td><input type="radio" name="q13" value="75"></td><td><input type="radio" name="q13" value="50"></td><td><input type="radio" name="q13" value="25"></td><td><input type="radio" name="q13" value="0"></td>
+					</tr>
+					<tr>
+						<td>14.</td><td>我不关心团的背景; 能与朋友聚在一起玩就很有趣。</td><td><input type="radio" name="q14" value="100"></td><td><input type="radio" name="q14" value="75"></td><td><input type="radio" name="q14" value="50"></td><td><input type="radio" name="q14" value="25"></td><td><input type="radio" name="q14" value="0"></td>
+					</tr>
+					<tr>
+						<td>15.</td><td>成为定位/职业中最好的比我是哪个定位/职业更重要。</td><td><input type="radio" name="q15" value="100"></td><td><input type="radio" name="q15" value="75"></td><td><input type="radio" name="q15" value="50"></td><td><input type="radio" name="q15" value="25"></td><td><input type="radio" name="q15" value="0"></td>
+					</tr>
+					<tr>
+						<td>16.</td><td>我最喜欢的游戏部分是严肃的战斗/战争。</td><td><input type="radio" name="q16" value="100"></td><td><input type="radio" name="q16" value="75"></td><td><input type="radio" name="q16" value="50"></td><td><input type="radio" name="q16" value="25"></td><td><input type="radio" name="q16" value="0"></td>
+					</tr>
+					<tr>
+						<td>17.</td><td>GM的工作是制造挑战，克服这些挑战是我的职责。</td><td><input type="radio" name="q17" value="100"></td><td><input type="radio" name="q17" value="75"></td><td><input type="radio" name="q17" value="50"></td><td><input type="radio" name="q17" value="25"></td><td><input type="radio" name="q17" value="0"></td>
+					</tr>
+					<tr>
+						<td>18.</td><td>我更喜欢玩我用过的职业/定位并且我不想改变。</td><td><input type="radio" name="q18" value="100"></td><td><input type="radio" name="q18" value="75"></td><td><input type="radio" name="q18" value="50"></td><td><input type="radio" name="q18" value="25"></td><td><input type="radio" name="q18" value="0"></td>
+					</tr>
+					<tr>
+						<td>19.</td><td>比起通过挑战我更喜欢游戏中的社交互动。</td><td><input type="radio" name="q19" value="100"></td><td><input type="radio" name="q19" value="75"></td><td><input type="radio" name="q19" value="50"></td><td><input type="radio" name="q19" value="25"></td><td><input type="radio" name="q19" value="0"></td>
+					</tr>
+					<tr>
+						<td>20.</td><td>战斗部分并不比任何其他部分更重要或更不重要。</td><td><input type="radio" name="q20" value="100"></td><td><input type="radio" name="q20" value="75"></td><td><input type="radio" name="q20" value="50"></td><td><input type="radio" name="q20" value="25"></td><td><input type="radio" name="q20" value="0"></td>
+					</tr>
+					<tr>
+						<td>21.</td><td>当不需要我的角色行动的时候，我会水群、刷微博、看网络视频等等。</td><td><input type="radio" name="q21" value="100"></td><td><input type="radio" name="q21" value="75"></td><td><input type="radio" name="q21" value="50"></td><td><input type="radio" name="q21" value="25"></td><td><input type="radio" name="q21" value="0"></td>
+					</tr>
+					<tr>
+						<td>22.</td><td>我是为了获取宝藏、技能、经验等而战斗。</td><td><input type="radio" name="q22" value="100"></td><td><input type="radio" name="q22" value="75"></td><td><input type="radio" name="q22" value="50"></td><td><input type="radio" name="q22" value="25"></td><td><input type="radio" name="q22" value="0"></td>
+					</tr>
+					<tr>
+						<td>23.</td><td>当所有人为了共同的目的一起努力时游戏才是最棒的。</td><td><input type="radio" name="q23" value="100"></td><td><input type="radio" name="q23" value="75"></td><td><input type="radio" name="q23" value="50"></td><td><input type="radio" name="q23" value="25"></td><td><input type="radio" name="q23" value="0"></td>
+					</tr>
+					<tr>
+						<td>24.</td><td>我有一个最喜欢的角色类型，无论团设定如何我都会用这个。</td><td><input type="radio" name="q24" value="100"></td><td><input type="radio" name="q24" value="75"></td><td><input type="radio" name="q24" value="50"></td><td><input type="radio" name="q24" value="25"></td><td><input type="radio" name="q24" value="0"></td>
+					</tr>
+					<tr>
+						<td>25.</td><td>我的角色基本就是我，就是具有特殊的能力。</td><td><input type="radio" name="q25" value="100"></td><td><input type="radio" name="q25" value="75"></td><td><input type="radio" name="q25" value="50"></td><td><input type="radio" name="q25" value="25"></td><td><input type="radio" name="q25" value="0"></td>
+					</tr>
+					<tr>
+						<td>26.</td><td>超出装上装备并且试图第一个挥舞武器的战斗准备是不必要的。</td><td><input type="radio" name="q26" value="100"></td><td><input type="radio" name="q26" value="75"></td><td><input type="radio" name="q26" value="50"></td><td><input type="radio" name="q26" value="25"></td><td><input type="radio" name="q26" value="0"></td>
+					</tr>
+					<tr>
+						<td>27.</td><td>我选择/设计我的角色来为我提供引人注目的角色扮演挑战。</td><td><input type="radio" name="q27" value="100"></td><td><input type="radio" name="q27" value="75"></td><td><input type="radio" name="q27" value="50"></td><td><input type="radio" name="q27" value="25"></td><td><input type="radio" name="q27" value="0"></td>
+					</tr>
+					<tr>
+						<td>28.</td><td>如果是一个好故事，我会牺牲我的角色。</td><td><input type="radio" name="q28" value="100"></td><td><input type="radio" name="q28" value="75"></td><td><input type="radio" name="q28" value="50"></td><td><input type="radio" name="q28" value="25"></td><td><input type="radio" name="q28" value="0"></td>
+					</tr>
+					<tr>
+						<td>29.</td><td>相比于我角色的个性我更关心的是他/她的战斗能力。</td><td><input type="radio" name="q29" value="100"></td><td><input type="radio" name="q29" value="75"></td><td><input type="radio" name="q29" value="50"></td><td><input type="radio" name="q29" value="25"></td><td><input type="radio" name="q29" value="0"></td>
+					</tr>
+					<tr>
+						<td>30.</td><td>当我无法使用我常用的角色类型时，我无法享受游戏。</td><td><input type="radio" name="q30" value="100"></td><td><input type="radio" name="q30" value="75"></td><td><input type="radio" name="q30" value="50"></td><td><input type="radio" name="q30" value="25"></td><td><input type="radio" name="q30" value="0"></td>
+					</tr>
+					<tr>
+						<td>31.</td><td>我们的角色是故事，团是他们的舞台。</td><td><input type="radio" name="q31" value="100"></td><td><input type="radio" name="q31" value="75"></td><td><input type="radio" name="q31" value="50"></td><td><input type="radio" name="q31" value="25"></td><td><input type="radio" name="q31" value="0"></td>
+					</tr>
+					<tr>
+						<td>32.</td><td>我更喜欢GM将所有角色记在笔记上而不用我记。</td><td><input type="radio" name="q32" value="100"></td><td><input type="radio" name="q32" value="75"></td><td><input type="radio" name="q32" value="50"></td><td><input type="radio" name="q32" value="25"></td><td><input type="radio" name="q32" value="0"></td>
+					</tr>
+					<tr>
+						<td>33.</td><td>战斗前情报收集的重要性不容小觑。</td><td><input type="radio" name="q33" value="100"></td><td><input type="radio" name="q33" value="75"></td><td><input type="radio" name="q33" value="50"></td><td><input type="radio" name="q33" value="25"></td><td><input type="radio" name="q33" value="0"></td>
+					</tr>
+					<tr>
+						<td>34.</td><td>我确保我的角色有乐趣的背景故事并且跟团的设定相关。</td><td><input type="radio" name="q34" value="100"></td><td><input type="radio" name="q34" value="75"></td><td><input type="radio" name="q34" value="50"></td><td><input type="radio" name="q34" value="25"></td><td><input type="radio" name="q34" value="0"></td>
+					</tr>
+					<tr>
+						<td>35.</td><td>我通过培养一个装备精良且准备充分的角色来克服游戏中的挑战。</td><td><input type="radio" name="q35" value="100"></td><td><input type="radio" name="q35" value="75"></td><td><input type="radio" name="q35" value="50"></td><td><input type="radio" name="q35" value="25"></td><td><input type="radio" name="q35" value="0"></td>
+					</tr>
+					<tr>
+						<td>36.</td><td>我尽力不让角色人设崩坏。</td><td><input type="radio" name="q36" value="100"></td><td><input type="radio" name="q36" value="75"></td><td><input type="radio" name="q36" value="50"></td><td><input type="radio" name="q36" value="25"></td><td><input type="radio" name="q36" value="0"></td>
+					</tr>
+					<tr>
+						<td>37.</td><td>角色能力成长与冒险一样重要。</td><td><input type="radio" name="q37" value="100"></td><td><input type="radio" name="q37" value="75"></td><td><input type="radio" name="q37" value="50"></td><td><input type="radio" name="q37" value="25"></td><td><input type="radio" name="q37" value="0"></td>
+					</tr>
+					<tr>
+						<td>38.</td><td>我希望扮演任何对实现游戏目标不可或缺的角色。</td><td><input type="radio" name="q38" value="100"></td><td><input type="radio" name="q38" value="75"></td><td><input type="radio" name="q38" value="50"></td><td><input type="radio" name="q38" value="25"></td><td><input type="radio" name="q38" value="0"></td>
+					</tr>
+					<tr>
+						<td>39.</td><td>我会很乐意扮演辅助角色假如只剩下这个。</td><td><input type="radio" name="q39" value="100"></td><td><input type="radio" name="q39" value="75"></td><td><input type="radio" name="q39" value="50"></td><td><input type="radio" name="q39" value="25"></td><td><input type="radio" name="q39" value="0"></td>
+					</tr>
+					<tr>
+						<td>40.</td><td>由于我只扮演同一类型的角色，每个人都知道能他们期待我多少。</td><td><input type="radio" name="q40" value="100"></td><td><input type="radio" name="q40" value="75"></td><td><input type="radio" name="q40" value="50"></td><td><input type="radio" name="q40" value="25"></td><td><input type="radio" name="q40" value="0"></td>
+					</tr>
+					<tr>
+						<td>41.</td><td>我的满足来自于我的角色参与更大的故事。</td><td><input type="radio" name="q41" value="100"></td><td><input type="radio" name="q41" value="75"></td><td><input type="radio" name="q41" value="50"></td><td><input type="radio" name="q41" value="25"></td><td><input type="radio" name="q41" value="0"></td>
+					</tr>
+					<tr>
+						<td>42.</td><td>即使会延缓或取消我角色的升级成长，我也要参加战斗。</td><td><input type="radio" name="q42" value="100"></td><td><input type="radio" name="q42" value="75"></td><td><input type="radio" name="q42" value="50"></td><td><input type="radio" name="q42" value="25"></td><td><input type="radio" name="q42" value="0"></td>
+					</tr>
+				</tbody></table><br>
+		</form> 
+		
+		<input type="button" value="提交" onclick="submitResults()">
+		<p id="TroubleShooting"></p>
+		<p id="MissedQuestions" class="Results"></p>
+		<p id="FormattedText" class="Results"></p>
+    	<div id="PieChart" class="Results"></div>
+		<p id="BarGraph" class="Results"></p>
+
+		<p>If you're interested, you can <a href="http://captainjoy.chunkyboy.com/RPGs/Questions.html">see how the questionaire is graded</a>.
+
+    
+</p></body></html>
